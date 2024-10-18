@@ -3,6 +3,7 @@ import Link from "next/link";
 interface SidebarLinkProps {
     href: string;
     label: string;
+    icon: IconType;
 }
 
 const SidebarLink: React.FC<SidebarLinkProps> = ({ href, label, icon: Icon }) => {

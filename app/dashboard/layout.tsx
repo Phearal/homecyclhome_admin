@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, ReactNode } from "react";
 import SidebarLink from "@/components/sidebar-link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -12,7 +12,11 @@ import { Input } from "@/components/ui/input"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import logo from "../../public/media/image/logo_homecyclhome_grayscale.png";
 
-export default function Layout({ children }) {
+interface LayoutProps {
+  children: ReactNode;
+}
+
+export default function Layout({ children }: LayoutProps) {
   const { setTheme } = useTheme()
   const [count, setCount] = useState(0);
   return (
