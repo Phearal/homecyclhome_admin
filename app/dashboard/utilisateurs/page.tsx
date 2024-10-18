@@ -1,3 +1,9 @@
+"use client"
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {title: "Utilisateurs"};
+
 export default function Users() {
     return (
       <div className="flex min-h-screen items-center justify-center">
